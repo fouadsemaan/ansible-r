@@ -4,3 +4,5 @@ r_cran_mirror : http://cran.rstudio.com
 # R packages to install
 #r_pkgs:
 #  - datasets
+
+#r_version: "3.3.0-1xenial0"

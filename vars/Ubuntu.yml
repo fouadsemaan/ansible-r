@@ -7,7 +7,7 @@ cran_apt_repo: 'deb {{r_cran_mirror}}/bin/linux/ubuntu {{ansible_distribution_re
 r_os_pkg_prefix: 'r-'
   
 r_base_pkg_list:
-  - r-base
-  - r-base-dev
+  - r-base{% if r_version is defined %}={{r_version}}{% endif %}
+  - r-base-dev{% if r_version is defined %}={{r_version}}{% endif %}
   - libopenblas-base
   - libcurl4-openssl-dev
